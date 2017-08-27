@@ -1,8 +1,8 @@
-* Graceful Degradation with Prometheus
+# Graceful Degradation with Prometheus
 
 (based on [prometheus-compose](https://github.com/vegasbrianc/prometheus))
 
-** Usage
+## Usage
 
 By default high_load alert triggered when more than 400 messages queued.
 
@@ -12,6 +12,6 @@ By default high_load alert triggered when more than 400 messages queued.
 Wait a little after putting more than 400 messages and it will reply with 503
 if you try to put more
 
-** License
+## License
 
 MIT
