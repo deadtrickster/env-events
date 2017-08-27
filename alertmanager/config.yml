@@ -1,0 +1,13 @@
+route:
+  receiver: 'web_app'
+  group_wait: 1s
+  group_interval: 1s
+
+global:
+  resolve_timeout: 1m
+
+receivers:
+  - name: 'web_app'
+    webhook_configs:
+      - send_resolved: true
+        url: 'http://web_app:4000/alerts'
